@@ -4,11 +4,72 @@
 
 <html>
   <head>
-      <title>  </title>
+      <title>  ENTRY </title>
+      <style>
+      h1 {
+          color: white;
+          text-align: center;
+      }
+      p {
+        font-family: verdana;
+        font-size: 10px;
+
+      }
+      body {
+          background-color: lightblue;
+
+      }
+
+      #setvalue {
+        color: red;
+
+      }
+      .testingmode{
+         font-size: 30;
+         font-weight: bold;
+      }
+
+      p.mustafa {
+        font-style: italic;
+        font-family: cursive;
+      }
+
+      </style>
+
+      <script>
+        function mozde()
+        {
+          document.getElementById("ozdeser").innerHTML = "ENGINEERING IS THE";
+          window.alert("YESSSSSS")
+        }
+      </script>
+      <p id ="demos"> </p>
+      <script>
+
+        var x = general(1,2);
+        document.getElementById("demos").innerHTML = x;
+
+        function general(a,b)
+        {
+          return a + b;
+        }
+
+      </script>
   </head>
 
 <body>
-  <p> HELLO.HTML </p>
+
+  <p class="mustafa"> ERROR </p>
+  <p id="setvalue"> HELLO.HTML </p>
+  <p class="testingmode"> HELLO.HTML </p>
+
+  <button type="button" onclick="mozde()"> YES </button>
+
+  <script>
+    document.getElementById("ozdeser").innerHTML = "MOZDESER1";
+
+  </script>
+
 </body>
 
 </html>
